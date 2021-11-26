@@ -1,16 +1,29 @@
-.navbar-brand{
+@font-face {
+    font-family: khand;
+    src: url(../fonts/Khand-Bold.ttf);
+  }
+@font-face {
+    font-family: brand;
+    src: url(../fonts/BAUHS93.ttf);
+  }
+.navbar-brand {
     color: #2E7CA5 !important;
+    font-family: brand !important;
 }
-.nav-link{
-    font-size:25px !important;
+
+.nav-link {
+    font-size: 25px !important;
     margin: 0 15px !important;
 }
-.nav-link:hover,.active{
+
+.nav-link:hover,
+.active {
     color: #FF5158 !important;
 }
-.banner{
-    height:100vh;
-    background: linear-gradient(#00000055,#00000055) ,url('../images/banner.jpg');
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(#00000055, #00000055), url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,11 +34,12 @@
     z-index: -1000;
     /* background-attachment: fixed; */
 }
-.main{
+
+.main {
     text-align: center;
     color: white;
     backdrop-filter: blur(10px);
-    background: linear-gradient(#00000055,#00000055);
+    background: linear-gradient(#00000055, #00000055);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -33,50 +47,61 @@
     width: 350px;
     padding: 45px;
 }
+
 @media screen and (min-width:992px) {
-    .main{
+    .main {
         transform: scale(1.3);
     }
 }
-.main-title{
-    font-weight: 900;
+
+.main-title {
+    font-family: 'khand';
+    margin: -10px 0px;
 }
-.logo{
+
+.logo {
     height: 100px;
     width: 150px;
 }
-.icon{
+
+.icon {
     height: 100px;
     width: 100px;
     z-index: 100;
 }
-.bg{
+
+.bg {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     backdrop-filter: blur(3px);
-    background: linear-gradient(#ffffff11,#ffffff11);
+    background: linear-gradient(#ffffff11, #ffffff11);
     z-index: -100;
 }
-.footer{
+
+.footer {
     color: #aaaaaa;
     font-size: 25px;
     letter-spacing: 1px;
 }
-.row{
+
+.row {
     display: flex !important;
 }
-.about-container{
+
+.about-container {
     position: relative !important;
-    background:linear-gradient(to bottom,#F79595,white);
+    background: linear-gradient(to bottom, #F79595, white);
     border-radius: 30px;
 }
-.height-100{
+
+.height-100 {
     height: 100vh;
 }
-.about-title{
+
+.about-title {
     background: #593C72;
     color: white;
     padding: 5px 25px;
@@ -84,86 +109,103 @@
     text-align: center;
     border-radius: 30px;
 }
-.card{
+
+.card {
     border-radius: 30px !important;
 }
-.dot{
+
+.dot {
     height: 20px;
-    width:20px;
+    width: 20px;
     display: inline-block;
     border-radius: 50%;
 }
-.dot-blue{
+
+.dot-blue {
     background: #213951;
 }
-.dot-red{
+
+.dot-red {
     background: #FF5158;
 }
-.top-row{
+
+.top-row {
     margin-top: 70px;
 }
-.services-bg{
-    background:linear-gradient(#2C75BCaa,#2C75BCaa), url('../images/service.jpg');
+
+.services-bg {
+    background: linear-gradient(#2C75BCaa, #2C75BCaa), url('../images/service.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 30px;
     color: white;
 }
-.services-container{
+
+.services-container {
     border-radius: 30px;
-    border:1px solid #2C75BC;
+    border: 1px solid #2C75BC;
     margin-top: 50px;
 }
-.web-design-card{
+
+.web-design-card {
     background: #E6F0F6;
     color: #28A5A5;
 }
-.web-development-card{
+
+.web-development-card {
     background: #F7F5F4;
     color: #6283A3;
 }
-.digital-marketing-card{
+
+.digital-marketing-card {
     background: #F7F5F4;
     color: #9B5FAA;
 }
-.graphic-design-card{
+
+.graphic-design-card {
     background: #FCF0E4;
     color: #D16B5D;
 }
-.smm-card{
+
+.smm-card {
     background: #F4F6F8;
     color: #FF758E;
 }
-.content-writing-card{
+
+.content-writing-card {
     background: #EFFAFB;
     color: #FF641A;
 }
-.contact-banner{
-    min-height:90vh;
+
+.contact-banner {
+    min-height: 90vh;
     height: auto;
-    background: linear-gradient(#00000055,#00000055) ,url('../images/banner.jpg');
+    background: linear-gradient(#00000055, #00000055), url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     /* background-attachment: fixed; */
 }
-.contact-title{
-    background: linear-gradient(#00000055,#00000055);
+
+.contact-title {
+    background: linear-gradient(#00000055, #00000055);
     padding: 10px 50px;
     border-radius: 20px;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     margin-top: 20px;
 }
-.contact-form{
-    background: linear-gradient(to bottom,white,#F9ECEC);
+
+.contact-form {
+    background: linear-gradient(to bottom, white, #F9ECEC);
     border-radius: 30px;
     padding: 50px;
     z-index: 10000;
 }
-.submit{
+
+.submit {
     padding: 10px 50px;
     background: #FF5158;
     border-radius: 30px;
@@ -174,21 +216,26 @@
     margin-top: 10px;
     transition: 0.3s ease-in-out all;
 }
-.submit:hover{
+
+.submit:hover {
     box-shadow: 0px 0px 20px 1px #FF5158;
 }
-.contact-icon{
+
+.contact-icon {
     height: 20px;
     width: 20px;
 }
-.social-icons{
+
+.social-icons {
     height: 30px;
     width: 30px;
     margin: 0 2px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     box-shadow: none !important;
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     box-shadow: none !important;
 }
